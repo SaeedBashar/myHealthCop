@@ -1,4 +1,4 @@
-:root {
+/* :root {
     scroll-behavior: smooth;
 }
 
@@ -20,3 +20,19 @@ h5,
 h6 {
     font-family: "Nunito", sans-serif;
 }
+
+@media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .toggle-sidebar #main {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar {
+        left: -300px;
+    }
+} */

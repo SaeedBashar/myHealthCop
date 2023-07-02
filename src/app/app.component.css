@@ -26,6 +26,12 @@
 
 @media (min-width: 1200px) {
     #main {
-        margin-left: 300px;
+        margin-left: 320px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .toggle-sidebar #main {
+        margin-left: 20;
     }
 }
