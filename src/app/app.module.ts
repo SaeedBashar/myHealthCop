@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
+import { UserManagementComponent } from './components/user-management/user-management.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AsideComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    UserManagementComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

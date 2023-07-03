@@ -12,4 +12,22 @@ window.onload = () => {
         })
     }
     
+    if(_get('#pieChart')){
+        buildPieChart()
+    }
+}
+
+
+const buildPieChart = ()=>{
+    new ApexCharts(document.querySelector("#pieChart"), {
+        series: [44, 55, 13, 43, 22],
+        chart: {
+          height: 350,
+          type: 'pie',
+          toolbar: {
+            show: true
+          }
+        },
+        labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E']
+      }).render();
 }
