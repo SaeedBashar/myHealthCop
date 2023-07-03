@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AsideComponent } from './components/aside/aside.component';
+import { StatisticsComponent } from './components/statistics/statistics.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AsideComponent
+    AsideComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
