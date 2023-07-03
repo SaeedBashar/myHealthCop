@@ -1,31 +1,63 @@
-<div class="row user-manage-cont">
-    <div class="col-md-6">
-        <div class="card">
-
-            <div class="card-body">
-                <h5 class="card-title">Users</h5>
-
-                <div class="row">
-                    <div class="col">
-                        <div id="pieChart"></div>
+<section class="user-manage-cont">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="card">
+    
+                <div class="card-body">
+                    <h5 class="card-title">Users</h5>
+    
+                    <div class="row">
+                        <div class="col">
+                            <div id="usersChart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+    
+                <div class="card-body">
+                    <h5 class="card-title">Users Location</h5>
+    
+                    <div class="row">
+                        <div class="col">
+                            <app-map></app-map>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+    
+                <div class="card-body">
+                    <h5 class="card-title">Registered Users</h5>
+    
+                    <div class="row">
+                        <div class="col">
+                            <div id="registeredUsersChart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+    
+                <div class="card-body">
+                    <h5 class="card-title">Demography</h5>
+    
+                    <div class="row">
+                        <div class="col">
+                            <div id="demography"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="card">
-
-            <div class="card-body">
-                <h5 class="card-title">Users Location</h5>
-
-                <div class="row">
-                    <div class="col">
-                        <app-map></app-map>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
+</section>
