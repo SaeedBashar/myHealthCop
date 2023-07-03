@@ -7,6 +7,7 @@ import { AsideComponent } from './components/aside/aside.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { UserManagementComponent } from './components/user-management/user-management.component';
 import { MapComponent } from './components/map/map.component';
+import { BookingsComponent } from './components/bookings/bookings.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MapComponent } from './components/map/map.component';
     AsideComponent,
     StatisticsComponent,
     UserManagementComponent,
-    MapComponent
+    MapComponent,
+    BookingsComponent
   ],
   imports: [
     BrowserModule,
