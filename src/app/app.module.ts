@@ -8,6 +8,7 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
 import { UserManagementComponent } from './components/user-management/user-management.component';
 import { MapComponent } from './components/map/map.component';
 import { BookingsComponent } from './components/bookings/bookings.component';
+import { FinancesComponent } from './components/finances/finances.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BookingsComponent } from './components/bookings/bookings.component';
     StatisticsComponent,
     UserManagementComponent,
     MapComponent,
-    BookingsComponent
+    BookingsComponent,
+    FinancesComponent
   ],
   imports: [
     BrowserModule,
