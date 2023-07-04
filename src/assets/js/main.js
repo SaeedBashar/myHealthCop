@@ -26,7 +26,16 @@ window.onload = () => {
 
     if(_get('#bookingsChart')){
       buildBookingsChart()
-  }
+    }
+
+    if(_get('#topSportCategories')){
+      buildTopSportCategories()
+    }
+
+    const datatables = [...document.querySelectorAll('.datatable')];
+    datatables.forEach(datatable => {
+      new simpleDatatables.DataTable(datatable);
+    })
 }
 
 const _get = (arg) => {
@@ -458,7 +467,7 @@ const buildActiveEntitiesChart = ()=>{
 }
 
 const buildBookingsChart = ()=>{
-  new ApexCharts(document.querySelector("#bookingsChart"), {
+  new ApexCharts(_get("#bookingsChart"), {
     series: [{
       name: "Desktops",
       data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
@@ -486,4 +495,30 @@ const buildBookingsChart = ()=>{
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
     }
   }).render();
+}
+
+const buildTopSportCategories = ()=>{
+    new ApexCharts(_get("#topSportCategories"), {
+      series: [{
+        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+      }],
+      chart: {
+        type: 'bar',
+        height: 350
+      },
+      plotOptions: {
+        bar: {
+          borderRadius: 4,
+          horizontal: true,
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      xaxis: {
+        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
+          'United States', 'China', 'Germany'
+        ],
+      }
+    }).render();
 }
