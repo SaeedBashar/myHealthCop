@@ -14,6 +14,8 @@ import { TrafficComponent } from './components/traffic/traffic.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { UserService } from './components/user-management/services/user.service';
 import { UsersComponent } from './components/user-management/users/users.component';
+import { RegisteredUsersComponent } from './components/user-management/registered-users/registered-users.component';
+import { DemographyComponent } from './components/user-management/demography/demography.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { UsersComponent } from './components/user-management/users/users.compone
     BookingsComponent,
     FinancesComponent,
     TrafficComponent,
-    UsersComponent
+    UsersComponent,
+    RegisteredUsersComponent,
+    DemographyComponent
   ],
   imports: [
     BrowserModule,
