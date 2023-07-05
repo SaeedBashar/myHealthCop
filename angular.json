@@ -29,15 +29,12 @@
               "src/assets/css/main.css",
               "src/assets/lib/bootstrap/css/bootstrap.min.css",
               "src/assets/lib/bootstrap-icons/bootstrap-icons.css",
-              "src/assets/lib/leaflet/leaflet.css",
               "src/assets/lib/simple-datatables/style.css"
             ],
             "scripts": [
               "src/assets/js/main.js",
               "src/assets/lib/bootstrap/js/bootstrap.bundle.min.js",
-              "src/assets/lib/apexcharts/apexcharts.min.js",
-              "src/assets/lib/leaflet/leaflet.js",
-              "src/assets/lib/leaflet/leaflet-svg-shape-markers.min.js",
+              "node_modules/apexcharts/dist/apexcharts.min.js",
               "src/assets/lib/simple-datatables/simple-datatables.js"
             ]
           },

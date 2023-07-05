@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,10 @@ import { UserManagementComponent } from './components/user-management/user-manag
 import { MapComponent } from './components/map/map.component';
 import { BookingsComponent } from './components/bookings/bookings.component';
 import { FinancesComponent } from './components/finances/finances.component';
+import { TrafficComponent } from './components/traffic/traffic.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { UserService } from './components/user-management/services/user.service';
+import { UsersComponent } from './components/user-management/users/users.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +23,17 @@ import { FinancesComponent } from './components/finances/finances.component';
     UserManagementComponent,
     MapComponent,
     BookingsComponent,
-    FinancesComponent
+    FinancesComponent,
+    TrafficComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgApexchartsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

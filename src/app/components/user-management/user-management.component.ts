@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-user-management',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-management.component.css']
 })
 export class UserManagementComponent {
-
+  
 }

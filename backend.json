@@ -1,0 +1,24 @@
+{
+    "user-management" : {
+        "users" : [
+            {"status": "Active Now","total": 800000},
+            {"status": "Pending","total": 115000},
+            {"status": "Reported","total": 101000},
+            {"status": "Invited", "total": 115000},
+            {"status": "Suspended", "total": 40000},
+            {"status": "Banned", "total": 20000}
+        ],
+        "users-location": [
+            { "name":"Accra","total": 2275334 },
+            { "name":"Kumasi","total": 1930138 },       
+            { "name":"Tamale","total": 50569 },          
+            { "name":"Sekondi-Takoradi","total": 44538 },
+            { "name":"Cape Coast","total": 155000 },    
+            { "name":"Bolgatanga","total": 76856 },      
+            { "name":"Wa","total": 102446 },             
+            { "name":"Koforidua","total": 127334 },      
+            { "name":"Sunyani","total": 75732 },         
+            { "name":"Ho","total": 96325 }               
+          ]
+    }
+}
