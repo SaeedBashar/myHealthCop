@@ -1,4 +1,21 @@
 {
+    "statistics": [
+      {
+        "title": "Customers",
+        "total": 12534735,
+        "percentageIncrease": 84.5
+      },
+      {
+        "title": "Corporative-Users",
+        "total": 8000000,
+        "percentageIncrease": 12.4
+      },
+      {
+        "title": "Professionals",
+        "total": 40000,
+        "percentageIncrease": 3.5
+      }
+    ],
     "user-management" : {
         "users" : [
             {"status": "Active Now","total": 800000},
@@ -47,5 +64,265 @@
           "dates": ["11 Dec 2017", "12 Dec 2017", "13 Dec 2017", "14 Dec 2017", "15 Dec 2017"],
           "users": [729034, 625482, 801234, 752310, 689431]
         }
-      ]
+    ],
+    "active-entities": [
+      { "entity": "classes", "total": 103 },
+      { "entity": "programs", "total": 76 },
+      { "entity": "events", "total": 125 }
+    ],
+    "bookings": {
+      "dates": ["27 Nov 2017", "28 Nov 2017", "29 Nov 2017", "30 Nov 2017", "01 Dec 2017"],
+      "users": [843720, 716590, 902319, 795321, 612350]
+    },
+    "top-bookings":[
+      {
+        "entity": "programs",
+        "data": [
+          {"name": "Get Healthier With MHC","total": 464},
+          {"name": "Yoga & Meditations For Beginners", "total": 345},
+          {"name": "Running For Weigth Loss", "total": 532},
+          {"name": "Yogalates", "total": 235},
+          {"name": "TRX", "total": 325},
+          {"name": "Pilates", "total": 289},
+          {"name": "Strength Training", "total": 412},
+          {"name": "Zumba Fitness", "total": 278},
+          {"name": "Cycling Class", "total": 379},
+          {"name": "Bootcamp", "total": 451},
+          {"name": "Kickboxing", "total": 396},
+          {"name": "Aerial Yoga", "total": 298}
+        ]
+      },
+      {
+        "entity": "events",
+        "data": [
+          {"name": "Event A", "total": 200},
+          {"name": "Event B", "total": 250},
+          {"name": "Event C", "total": 180},
+          {"name": "Event D", "total": 220}
+        ]
+      },
+      {
+        "entity": "classes",
+        "data": [
+          {"name": "Class A", "total": 100},
+          {"name": "Class B", "total": 150},
+          {"name": "Class C", "total": 80},
+          {"name": "Class D", "total": 120}
+        ]
+      }
+    ],
+    "sport-categories":[
+      {"name": "Tennis", "total": 242947},
+      {"name": "Running", "total": 53822},
+      {"name": "Fitness", "total": 242223},
+      {"name": "Aerobics", "total": 123847},
+      {"name": "Swimming", "total": 182375},
+      {"name": "Cycling", "total": 285011},
+      {"name": "Basketball", "total": 90536},
+      {"name": "Yoga", "total": 183502},
+      {"name": "Soccer", "total": 356281},
+      {"name": "Gymnastics", "total": 121453},
+      {"name": "Volleyball", "total": 79413},
+      {"name": "Boxing", "total": 103722}
+    ],
+    "sport-places": [
+      {"places": "Halo Sport Gym", "total": 443},
+      {"places": "Dream Sweam Paal", "total": 323},
+      {"places": "EnergyTherapy", "total": 234},
+      {"places": "YoGa House", "total": 464},
+      {"places": "Wellness Gym", "total": 554}
+    ],
+    "professionals": [
+      {
+        "profession": "Nutrition Specialists",
+        "data": [
+          {
+            "name": "John Smith",
+            "total": 23424,
+            "imageUrl": "https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg?auto=compress&cs=tinysrgb&w=600"
+          }
+        ]
+      },
+      {
+        "profession": "Doctor",
+        "data": [
+          {
+            "name": "Jane Doe",
+            "total": 18529,
+            "imageUrl": "https://images.pexels.com/photos/4890259/pexels-photo-4890259.jpeg?auto=compress&cs=tinysrgb&w=600"
+          },
+          {
+            "name": "David Johnson",
+            "total": 31984,
+            "imageUrl": "https://images.pexels.com/photos/7204273/pexels-photo-7204273.jpeg?auto=compress&cs=tinysrgb&w=600"
+          }
+        ]
+      },
+      {
+        "profession": "Physical Therapist",
+        "data": [
+          {
+            "name": "Emily Williams",
+            "total": 12643,
+            "imageUrl": "https://images.pexels.com/photos/6608313/pexels-photo-6608313.jpeg?auto=compress&cs=tinysrgb&w=600"
+          },
+          {
+            "name": "Michael Brown",
+            "total": 27591,
+            "imageUrl": "https://images.pexels.com/photos/6147118/pexels-photo-6147118.jpeg?auto=compress&cs=tinysrgb&w=600"
+          }
+        ]
+      },
+      {
+        "profession": "Gym Trainer",
+        "data": [
+          {
+            "name": "Kelvin Thompson",
+            "total": 4332,
+            "imageUrl": "https://images.pexels.com/photos/5231575/pexels-photo-5231575.jpeg?auto=compress&cs=tinysrgb&w=600"
+          },
+          {
+            "name": "Michael Brown",
+            "total": 13384,
+            "imageUrl": "https://www.pexels.com/photo/man-in-red-crew-neck-shirt-4486779/"
+          }
+        ]
+      }
+    ],
+    "top-income": [
+      {
+        "profession": "Nutrition Specialists",
+        "data": [
+          {
+            "name": "John Smith",
+            "income": 23424,
+            "imageUrl": "https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg?auto=compress&cs=tinysrgb&w=600"
+          }
+        ]
+      },
+      {
+        "profession": "Doctors",
+        "data": [
+          {
+            "name": "Jane Doe",
+            "salary": 18529,
+            "imageUrl": "https://images.pexels.com/photos/4890259/pexels-photo-4890259.jpeg?auto=compress&cs=tinysrgb&w=600"
+          },
+          {
+            "name": "David Johnson",
+            "salary": 31984,
+            "imageUrl": "https://images.pexels.com/photos/7204273/pexels-photo-7204273.jpeg?auto=compress&cs=tinysrgb&w=600"
+          }
+        ]
+      }
+    ],
+    "cashflow": [
+      {
+        "weekNo": 1,
+        "dates": ["13 Nov 2017", "14 Nov 2017", "15 Nov 2017", "16 Nov 2017", "17 Nov 2017"],
+        "revenue": [543524, 623402, 731249, 805321, 674950],
+        "expenses": [943524, 883524, 703524, 613524, 403524]
+      },
+      {
+        "weekNo": 2,
+        "dates": ["20 Nov 2017", "21 Nov 2017", "22 Nov 2017", "23 Nov 2017", "24 Nov 2017"],
+        "revenue": [689401, 782032, 659274, 529842, 708913],
+        "expenses": [989401, 869401, 98431, 83734, 53762]
+      },
+      {
+        "weekNo": 3,
+        "dates": ["27 Nov 2017", "28 Nov 2017", "29 Nov 2017", "30 Nov 2017", "01 Dec 2017"],
+        "revenue": [843720, 716590, 902319, 795321, 612350],
+        "expenses": [835703, 812530, 4824356, 735321, 412350]
+      },
+      {
+        "weekNo": 4,
+        "dates": ["04 Dec 2017", "05 Dec 2017", "06 Dec 2017", "07 Dec 2017", "08 Dec 2017"],
+        "revenue": [567893, 689235, 751239, 674520, 803124],
+        "expenses": [447893, 729235, 651239, 764520, 783124]
+      },
+      {
+        "weekNo": 5,
+        "dates": ["11 Dec 2017", "12 Dec 2017", "13 Dec 2017", "14 Dec 2017", "15 Dec 2017"],
+        "revenue": [729034, 625482, 801234, 752310, 689431],
+        "expenses": [449034, 825482, 561234, 582310, 869431]
+      }
+    ],
+    "traffic": [
+    {
+      "weekNo": 1,
+      "dates": ["13 Nov 2017", "14 Nov 2017", "15 Nov 2017", "16 Nov 2017", "17 Nov 2017"],
+      "direct": [543524, 623402, 731249, 805321, 674950],
+      "organic_search": [943524, 883524, 703524, 613524, 403524],
+      "social": [843792, 454453, 764359, 857393, 479373],
+      "referral": [493746, 479435, 844833, 658384, 584836],
+      "other": [573836, 374937, 568369, 873946, 375973]
+    },
+    {
+      "weekNo": 2,
+      "dates": ["20 Nov 2017", "21 Nov 2017", "22 Nov 2017", "23 Nov 2017", "24 Nov 2017"],
+      "direct": [689401, 782032, 659274, 529842, 708913],
+      "organic_search": [583047, 646934, 534836, 547363, 764836],
+      "social": [643792, 754453, 564359, 657393, 479373],
+      "referral": [989401, 869401, 98431, 83734, 53762],
+      "other": [636947, 547393, 836493, 549373, 683694]
+    }
+    ],
+    "active-users": [
+      { "entity": "Mobile", "total": 9803 },
+      { "entity": "Desktop", "total": 6576 },
+      { "entity": "Tablet", "total": 1825 }
+    ],
+    "regions": [
+      {
+        "name": "Greater Accra",
+        "capital": "Accra",
+        "total": 547473
+      },
+      {
+        "name": "Ashanti",
+        "capital": "Kumasi",
+        "total": 55302
+      },
+      {
+        "name": "Brong-Ahafo",
+        "capital": "Sunyani",
+        "total": 299110
+      },
+      {
+        "name": "Central",
+        "capital": "Cape Coast",
+        "total": 170983
+      },
+      {
+        "name": "Eastern",
+        "capital": "Koforidua",
+        "total": 258050
+      },
+      {
+        "name": "Northern",
+        "capital": "Tamale",
+        "total": 296683
+      },
+      {
+        "name": "Upper East",
+        "capital": "Bolgatanga",
+        "total": 228338
+      },
+      {
+        "name": "Upper West",
+        "capital": "Wa",
+        "total": 215585
+      },
+      {
+        "name": "Volta",
+        "capital": "Ho",
+        "total": 308483
+      },
+      {
+        "name": "Western",
+        "capital": "Sekondi-Takoradi",
+        "total": 237612
+      }
+    ]
 }

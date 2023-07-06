@@ -1,0 +1,23 @@
+<div class="card top-sport-places">
+    
+    <div class="card-body">
+      <h5 class="card-title">Top Sport Places</h5>
+
+      <table class="table table-borderless datatable">
+        <thead>
+          <tr>
+            <th scope="col">Sport Places</th>
+            <th scope="col">Entities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of data">
+            <td><a href="#" class="text-primary">{{x.places}}</a></td>
+            <td>{{x.total}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>

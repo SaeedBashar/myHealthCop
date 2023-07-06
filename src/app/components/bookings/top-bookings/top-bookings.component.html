@@ -1,0 +1,37 @@
+<div class="card top-bookings">
+  <div class="filter">
+    <a class="icon" href="#" style="text-decoration: none;" data-bs-toggle="dropdown">
+        {{currentEntity}}
+        <i class="bi bi-three-dots"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+      <li class="dropdown-header text-start">
+        <h6>Change Entity</h6>
+      </li>
+
+      <li *ngFor="let w of entities"><button (click)="changeEntity(w.entity)" class="dropdown-item" href="#">{{w.entity}}</button></li>
+      
+    </ul>
+</div>
+    <div class="card-body">
+      <h5 class="card-title">Top Bookings</h5>
+
+      <table class="table table-borderless datatable">
+        <thead>
+          <tr>
+            <th scope="col">Programs</th>
+            <th scope="col">Bookings</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let x of currentTableData">
+            <td><a href="#" class="text-primary">{{x.name}}</a></td>
+            <td>{{x.total}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>

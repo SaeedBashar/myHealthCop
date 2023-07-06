@@ -12,10 +12,24 @@ import { BookingsComponent } from './components/bookings/bookings.component';
 import { FinancesComponent } from './components/finances/finances.component';
 import { TrafficComponent } from './components/traffic/traffic.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { ActiveEntitiesComponent } from './components/bookings/active-entities/active-entities.component';
+import { BookingService } from './components/bookings/services/booking.service';
+import { BookingComponent } from './components/bookings/booking/booking.component';
+import { TopBookingsComponent } from './components/bookings/top-bookings/top-bookings.component';
+import { TopProfessionalsComponent } from './components/bookings/top-professionals/top-professionals.component';
+import { SportCategoriesComponent } from './components/bookings/sport-categories/sport-categories.component';
+import { SportPlacesComponent } from './components/bookings/sport-places/sport-places.component';
+import { TopIncomeComponent } from './components/finances/top-income/top-income.component';
+import { FinanceService } from './components/finances/services/finance.service';
+import { CashflowComponent } from './components/finances/cashflow/cashflow.component';
+import { TrafficsComponent } from './components/traffic/traffics/traffics.component';
+import { TrafficService } from './components/traffic/services/traffic.service';
+import { ActiveVisitorsComponent } from './components/traffic/active-visitors/active-visitors.component';
+import { DemographyComponent } from './components/user-management/demography/demography.component';
+import { RegisteredUsersComponent } from './components/user-management/registered-users/registered-users.component';
 import { UserService } from './components/user-management/services/user.service';
 import { UsersComponent } from './components/user-management/users/users.component';
-import { RegisteredUsersComponent } from './components/user-management/registered-users/registered-users.component';
-import { DemographyComponent } from './components/user-management/demography/demography.component';
+import { FormatNumberPipe } from './pipes/format-number.pipe';
 
 @NgModule({
   declarations: [
@@ -27,17 +41,30 @@ import { DemographyComponent } from './components/user-management/demography/dem
     BookingsComponent,
     FinancesComponent,
     TrafficComponent,
-    UsersComponent,
+    ActiveEntitiesComponent,
+    BookingComponent,
+    TopBookingsComponent,
+    TopProfessionalsComponent,
+    SportCategoriesComponent,
+    SportPlacesComponent,
+    TopIncomeComponent,
+    CashflowComponent,
+    TrafficsComponent,
+    ActiveVisitorsComponent,
+    DemographyComponent,
     RegisteredUsersComponent,
-    DemographyComponent
+    UsersComponent,
+    UserManagementComponent,
+    FormatNumberPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgApexchartsModule,
-    HttpClientModule
+    HttpClientModule,
+    // UserManagementModule
   ],
-  providers: [UserService],
+  providers: [UserService, BookingService, FinanceService, TrafficService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

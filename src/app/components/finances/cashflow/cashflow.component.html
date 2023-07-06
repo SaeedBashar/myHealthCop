@@ -1,0 +1,52 @@
+<section class="row">
+    <div class="col-md-5">
+        <div class="card">
+          <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+            <h5 class="card-title">Donations To Ghana Community</h5>
+            <img src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=600" style="max-width: 100%" alt="Donations">
+            <h3>$1,200.000</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="card">
+            <div class="filter">
+                <a class="icon" href="#" style="text-decoration: none;" data-bs-toggle="dropdown">
+                    Week {{weekNo}}
+                    <i class="bi bi-three-dots"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Change Week</h6>
+                  </li>
+        
+                  <li *ngFor="let w of componentData"><button #cw (click)="changeWeek(w.weekNo, cw)" class="dropdown-item" href="#">Week {{w.weekNo}}</button></li>
+                  
+                </ul>
+            </div>
+          <div class="card-body">
+            <h5 class="card-title">Cashflow</h5>
+  
+            <div class="row">
+              <div class="col">
+                <div id="cashflowChart">
+                    <apx-chart
+                      [title]="title"
+                      [series]="chartOptions.series"
+                      [chart]="chartOptions.chart"
+                      [xaxis]="chartOptions.xaxis"
+                      [stroke]="chartOptions.stroke"
+                      [dataLabels]="chartOptions.dataLabels"
+                      [yaxis]="chartOptions.yaxis"
+                      [labels]="chartOptions.labels"
+                      [legend]="chartOptions.legend"
+                      [subtitle]="chartOptions.subtitle"
+                      [title]="chartOptions.title"
+                    ></apx-chart>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>

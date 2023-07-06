@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="filter">
+    <a class="icon" href="#" style="text-decoration: none;" data-bs-toggle="dropdown">
+        Week {{weekNo}}
+        <i class="bi bi-three-dots"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+      <li class="dropdown-header text-start">
+        <h6>Change Week</h6>
+      </li>
+
+      <li *ngFor="let w of componentData"><button #cw (click)="changeWeek(w.weekNo, cw)" class="dropdown-item" href="#">Week {{w.weekNo}}</button></li>
+      
+    </ul>
+</div>
+    <div class="card-body">
+      <h5 class="card-title">Traffic</h5>
+
+      <div class="row">
+        <div class="col">
+          <div id="trafficChart">
+            <!-- [title]="title" -->
+            <apx-chart
+              [series]="chartOptions.series"
+              [chart]="chartOptions.chart"
+              [xaxis]="chartOptions.xaxis"
+              [stroke]="chartOptions.stroke"
+              [dataLabels]="chartOptions.dataLabels"
+              [yaxis]="chartOptions.yaxis"
+              [labels]="chartOptions.labels"
+              [legend]="chartOptions.legend"
+              [subtitle]="chartOptions.subtitle"
+              ></apx-chart>
+              <!-- [title]="chartOptions.title" -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

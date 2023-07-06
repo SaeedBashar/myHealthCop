@@ -1,0 +1,37 @@
+<div class="card top-profession">
+    
+    <div class="card-body">
+      <h5 class="card-title">Top Professionals</h5>
+
+      <table class="table table-borderless datatable">
+        <thead>
+          <tr>
+            <th scope="col">
+                <div class="nav-item dropdown prof-item">
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                      {{currentProfession}}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                      <li *ngFor="let x of data">
+                        <p (click)="changeProfession(x.profession)">{{x.profession}}</p>
+                      </li>
+                    </ul>
+                </div>
+            </th>
+            <th scope="col">Bookings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of currentData">
+            <td>
+                <img class="profile-img" [src]="x.imageUrl" alt="">
+                <a href="#" class="text-primary">{{x.name}}</a>
+            </td>
+            <td>{{x.total}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>

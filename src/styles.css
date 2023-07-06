@@ -35,3 +35,11 @@ h6 {
     transition: 0.3s;
     font-size: 16px;
 }
+
+.profile-img {
+    display: inline-block;
+    max-width: 45px;
+    max-height: 45px;
+    border-radius: 10px;
+    margin-right: 10px;
+}

@@ -28,13 +28,13 @@
 
 @media (min-width: 1200px) {
     #main {
-        margin-left: 320px;
+        margin-left: 300px;
     }
 }
 
 @media (min-width: 1200px) {
     .toggle-sidebar #main {
-        margin-left: 20;
+        margin-left: 0;
     }
 }
 

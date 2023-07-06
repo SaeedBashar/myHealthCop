@@ -1,0 +1,20 @@
+<div class="card">
+    
+    <div class="card-body">
+        <h5 class="card-title">Active Entities</h5>
+
+        <div class="row">
+            <div class="col">
+                <div id="activeEntitiesChart">
+                    <apx-chart
+                    [title]="title"
+                    [series]="chartOptions.series"
+                    [chart]="chartOptions.chart"
+                    [labels]="chartOptions.labels"
+                    [responsive]="chartOptions.responsive"
+                    ></apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
